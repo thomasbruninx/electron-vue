@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "vue-cli-service build && electron ."
+    "start": "vue-cli-service build && electron .",
+    "build-win64": "vue-cli-service build && electron-packager . appname --platform=win32 --arch=x64"
   },
   "main": "main.js",
   "dependencies": {
@@ -30,6 +31,7 @@
     "@vue/cli-service": "~5.0.0",
     "@vue/eslint-config-typescript": "^9.1.0",
     "electron": "^17.1.2",
+    "electron-packager": "^15.4.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.49.9",
